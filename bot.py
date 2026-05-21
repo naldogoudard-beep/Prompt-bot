@@ -22,7 +22,7 @@ TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-pro-vision")
 
 PROMPT_INSTRUCOES = """Você é um especialista em fotografia de produto, marketing visual e geração de prompts para IA de imagem (Midjourney, DALL-E, Stable Diffusion).
 
